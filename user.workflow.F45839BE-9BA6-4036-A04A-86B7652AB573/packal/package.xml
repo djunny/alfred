@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>CodeVar</name>
+  <version>1.0</version>
+  <bundle>codevar</bundle>
+  <updated>1481687302</updated>
+  <file>codevar.alfredworkflow</file>
+</workflow>
