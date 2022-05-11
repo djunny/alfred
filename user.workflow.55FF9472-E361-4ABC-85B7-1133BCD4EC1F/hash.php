@@ -3,7 +3,7 @@
 // ****************
 error_reporting(0);
 require_once('workflows.php');
-
+chdir(__DIR__);
 $w = new Workflows();
 
 mb_internal_encoding('UTF-8');
@@ -28,6 +28,7 @@ function env($key = null, $def = '') {
 
     return $env;
 }
+
 
 class b64 {
 
@@ -69,7 +70,7 @@ class b64 {
     }
 
     private static function alphabets() {
-        return str_split(env('ALPHABET', static::CUSTOM_ALPHA));
+        return str_split(env('B64_ALPHABET', static::CUSTOM_ALPHA));
 
     }
 
